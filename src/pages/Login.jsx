@@ -13,7 +13,7 @@ const Login = () => {
         password,
       });
       console.log('Login successful', response.data);
-      // Handle token storage or redirect here
+
     } catch (error) {
       console.error('Login error', error);
     }

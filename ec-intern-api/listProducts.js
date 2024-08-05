@@ -4,11 +4,11 @@ import  fs from 'fs';
 const app = express();
 const port = 3001;
 
-// Serve JSON file
+
 app.get('/api/products', (req, res) => {
-  // Navigate up one directory and then to 'public/product.json'
+
   const filePath = path.join(__dirname, '..', 'public', 'product.json');
-  console.log('File path:', filePath); // Debugging line
+  console.log('File path:', filePath); 
 
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {

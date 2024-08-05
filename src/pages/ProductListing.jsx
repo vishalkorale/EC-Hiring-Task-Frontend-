@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-// For local file use
-const localProductsUrl = '/products.json';
-
 const ProductListing = () => {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState('');
@@ -16,7 +13,7 @@ const ProductListing = () => {
 
   const fetchProducts = async () => {
     try {
-      // Change this to `localProductsUrl` if using local JSON file
+ 
       const response = await axios.get('product.json');
       setProducts(response.data);
     } catch (error) {
