@@ -10,6 +10,6 @@
 3. Run `npm start` to start the development server.
 
 ## Deployment
-- Live Link: [ Deployment Link](YOUR_DEPLOYMENT_LINK)
+- Live Link: [ Deployment Link](https://ec-hiring-task-frontend-git-main-vishal-korales-projects.vercel.app/)
 
 
