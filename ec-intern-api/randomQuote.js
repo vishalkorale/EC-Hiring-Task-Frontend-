@@ -1,18 +1,24 @@
-import express from 'express';
+import express from "express";
 const app = express();
-const port = 3002; 
-
+const port = 3002;
 
 const quotes = [
-  { quote: "But Men Are Men; The Best Sometimes Forget.", author: "William Shakespeare" },
-  { quote: "To be, or not to be, that is the question.", author: "William Shakespeare" },
+  {
+    quote: "But Men Are Men; The Best Sometimes Forget.",
+    author: "William Shakespeare",
+  },
+  {
+    quote: "To be, or not to be, that is the question.",
+    author: "William Shakespeare",
+  },
   { quote: "I think, therefore I am.", author: "René Descartes" },
-  { quote: "The only thing we have to fear is fear itself.", author: "Franklin D. Roosevelt" },
-
+  {
+    quote: "The only thing we have to fear is fear itself.",
+    author: "Franklin D. Roosevelt",
+  },
 ];
 
-
-app.get('/api/quote', (req, res) => {
+app.get("/api/quote", (req, res) => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
   res.status(200).json(randomQuote);
